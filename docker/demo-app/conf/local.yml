@@ -1,0 +1,12 @@
+serviceName: demo-app
+
+server:
+  port: 8080
+  mode: debug
+
+
+checks:
+  'DB': { name: "MySQL", slug: "db", type: "internal", istraversable: "false", randomlyfail: "false", result: "OK", details: "" }
+  'MEMCACHED': { name: "Memcached", slug: "cache", type: "internal", istraversable: "false", randomlyfail: "true", result: "CRIT", details: "Could not connect to memcache server" }
+  'SERVICE1': { name: "Service 1", slug: "service-1", type: "external", istraversable: "true", randomlyfail: "false", baseurl: "http://service-1:8081", result: "OK", details: "" }
+  'SERVICE2': { name: "Service 2", slug: "service-2", type: "external", istraversable: "true", randomlyfail: "false", baseurl: "http://service-2:8082", result: "OK", details: "" }

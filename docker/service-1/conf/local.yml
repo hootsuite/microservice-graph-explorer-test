@@ -1,0 +1,9 @@
+serviceName: service-1
+
+server:
+  port: 8081
+  mode: debug
+
+
+checks:
+  'MONGO': { name: "Mongo DB", slug: "mongo", type: "internal", istraversable: "false", randomlyfail: "false", result: "OK", details: "" }

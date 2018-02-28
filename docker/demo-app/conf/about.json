@@ -1,0 +1,12 @@
+{
+  "id": "demo-app",
+  "summary": "Demo App",
+  "description": "A demo app to be used with the Microservice Graph Explorer for testing and exploring service graphs. This app has two internal dependencies (Memcached and a MySQL DB) and two service dependencies (Service 1 and Service 2). Try exploring the graph by clicking on \"Service 1\" or \"Service 2\" below. Also, the Memcached dependency is configured to fail randomly to show you what an error looks like.",
+  "maintainers": [
+    "adam.arsenault@hootsuite.com"
+  ],
+  "projectRepo": "https://github.com/hootsuite/microservice-graph-explorer-test",
+  "projectHome": "https://github.com/hootsuite/microservice-graph-explorer-test",
+  "logsLinks": ["http://demoapp.com/logs", "http://demoapp.com/error-logs"],
+  "statsLinks": ["http://demoapp.com/service-stats", "http://demoapp.com/service-errors"]
+}

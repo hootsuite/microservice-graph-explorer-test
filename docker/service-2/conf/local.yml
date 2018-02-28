@@ -1,0 +1,10 @@
+serviceName: service-2
+
+server:
+  port: 8082
+  mode: debug
+
+
+checks:
+  'REDIS': { name: "Redis", slug: "redis", type: "internal", istraversable: "false", randomlyfail: "false", result: "OK", details: "" }
+  'SERVICE1': { name: "Service 1", slug: "service-1", type: "external", istraversable: "true", randomlyfail: "false", baseurl: "http://service-1:8081", result: "OK", details: "" }

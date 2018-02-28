@@ -1,0 +1,23 @@
+version: '3'
+services:
+  demo-app:
+    build: .
+    ports:
+     - "8080:8080"
+    volumes:
+      - ./docker/demo-app/conf/local.yml:/go/src/app/conf/local.yml
+      - ./docker/demo-app/conf/about.json:/go/src/app/conf/about.json
+  service-1:
+    build: .
+    ports:
+     - "8081:8081"
+    volumes:
+      - ./docker/service-1/conf/local.yml:/go/src/app/conf/local.yml
+      - ./docker/service-1/conf/about.json:/go/src/app/conf/about.json
+  service-2:
+    build: .
+    ports:
+      - "8082:8082"
+    volumes:
+      - ./docker/service-2/conf/local.yml:/go/src/app/conf/local.yml
+      - ./docker/service-2/conf/about.json:/go/src/app/conf/about.json

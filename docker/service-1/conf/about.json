@@ -1,0 +1,12 @@
+{
+  "id": "service-1",
+  "summary": "Service 1",
+  "description": "A test service for exploring service graphs. This service has one internal dependency, a Mongo database.",
+  "maintainers": [
+    "adam.arsenault@hootsuite.com"
+  ],
+  "projectRepo": "https://github.com/hootsuite/microservice-graph-explorer-test",
+  "projectHome": "https://github.com/hootsuite/microservice-graph-explorer-test",
+  "logsLinks": ["http://demoapp.com/logs", "http://demoapp.com/error-logs"],
+  "statsLinks": ["http://demoapp.com/service-stats", "http://demoapp.com/service-errors"]
+}
