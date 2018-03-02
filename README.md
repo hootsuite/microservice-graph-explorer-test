@@ -36,11 +36,7 @@ and [service 2](http://localhost:8081/status/about).
 
 
 # Exploring the Service Graph
-If you haven't already, head on over the [Microservice Graph Explorer](https://github.com/hootsuite/microservice-graph-explorer) 
-project in github and follow the instructions to [Build](https://github.com/hootsuite/microservice-graph-explorer#install-build-tools) 
-and [Run the app](https://github.com/hootsuite/microservice-graph-explorer#running-the-app).
-
-Once the Microservice Graph Explorer app is running, load [http://localhost:9000](http://localhost:9000) in your favorite 
+Check the Microservice Graph Explorer app is running by loading [http://localhost:9000](http://localhost:9000) in your favorite 
 browser. At this point you should see the homepage of the Microservice Graph Explorer with a link to `Test Service Graph` 
 under `Quick Links`.
 
@@ -62,7 +58,7 @@ To make the `Mongo` dependency of `Service 1` fail, open `docker/service-1/conf/
 docker-compose up -d --build
 ```
 
-To make `Mongo` dependency fail randomly, change the value `randomlyfail: "false"` to ` randomlyfail: "true"` and then 
+To make the `Mongo` dependency fail randomly, change the value `randomlyfail: "false"` to ` randomlyfail: "true"` and then 
 build/deploy again using:
 
 ```ssh

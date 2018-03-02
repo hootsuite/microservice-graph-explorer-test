@@ -1,5 +1,9 @@
 version: '3'
 services:
+  explorer:
+    image: hootsuite/microservice-graph-explorer:1.0.0
+    ports:
+     - "9000:9000"
   demo-app:
     build: .
     ports:
