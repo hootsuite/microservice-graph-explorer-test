@@ -4,6 +4,8 @@ services:
     image: hootsuite/microservice-graph-explorer:1.0.0
     ports:
      - "9000:9000"
+    volumes:
+      - ./docker/microservice-graph-explorer/conf/application.conf:/opt/docker/conf/application.conf
   demo-app:
     build: .
     ports:
