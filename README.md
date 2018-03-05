@@ -4,6 +4,7 @@
 - [Exploring the Service Graph](#exploring-the-service-graph)
 - [Advanced Testing](#advanced-testing)
 - [Stopping the Services](#stopping-the-services)
+- [How To Contribute](#how-to-contribute)
 
 # Introduction
 
@@ -24,7 +25,10 @@ Install Docker from [https://docs.docker.com/install/](https://docs.docker.com/i
 Install Docker Compose from [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/).
 
 ### Run the Services
-Build and run the services using Docker compose by running the follwing command:
+Each service is written in [Go](https://golang.org/) and exposes the [Health Checks API](https://github.com/hootsuite/health-checks-api) 
+using the [Go Health Checks Framework](https://github.com/hootsuite/healthchecks). 
+
+To build and run the services using Docker compose by running the follwing command:
 ```ssh
 docker-compose up -d --build
 ```
@@ -70,3 +74,8 @@ To stop the services running on your machine, run:
 ```ssh
 docker-compose down --rmi all
 ```
+# How To Contribute
+Contribute by submitting a PR and a bug report in GitHub.
+
+# Maintainers
+- :octocat: [Adam Arsenault](https://github.com/HootAdam) - [@Adam_Arsenault](https://twitter.com/Adam_Arsenault)
